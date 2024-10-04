@@ -1,0 +1,52 @@
+In functia matrix_array am implementat algoritmul pentru a dauga o noua matrice
+in colectia de matrici. Citesc nr de lini si de coloane (m,n) . Incrementez
+apoi numarul de matrici din colectie. Realoc memorie oentru vectorul de randuri
+,adaugand spatiu pentru o noua matrice si pentru un nou vector de coloane.
+Stochez apoi numarul de randuri si de coloane ale noii matrici in ultimele
+pozitii ale vectorilor.Realoc apoi memorie pentru colectia de matrici ,
+adaugand spatiu pentru o noua matrice.
+Functia print_matrix afiseaza o matrice din colectia de matrice.
+In functia multiply verific dacă numărul de coloane al primei matrice este egal
+cu numărul de rânduri al celei de-a doua matrice. Dacă nu sunt egale,
+înmulțirea nu este posibilă și se afișează un mesaj de eroare.
+Imi aloc apoi memorie pentru matricea rezultat , apoi fac
+algoritmul pentru inmultirea a doua matrici folosind 3 for-uri .
+Ma asigur că rezultatul este pozitiv și se află în intervalul [0, 10007) prin
+aplicarea operațiilor modulo.Actualizez colecția de matrici cu matricea
+rezultat. Măresc numărul total de matrici , realoc spațiul pentru dimensiunile
+matricilor, și adaug matricea rezultat la sfârșitul colecției.
+Functia delete_matrix sterge o matrice din colectie.
+In functia swap_matrix interschimb doua matrici din colectie.
+In functia transposed am implementat algoritmul pentru a calcula transpusa
+Aloc mai intai memorie pentru matricea auxiliara cu dimensiunile inversate
+Copiez apoi elementele din matricea originala in matricea auxiliara , dar
+transpuse.Eliberez memoria ocupata de matricea originala .
+Aloc memorie pentru matricea originala cu dimensiunile inversate.
+Copiez apoi elementele din matricea auxiliara in matricea originala,dar
+transpuse.Si apoi eliberez memoria ocupata de matricea auxiliara.
+In functia sum_elements fac suma elementelor dintr-o matrice pentru a face apoi
+sortarea in functie de suma elementelor. In functia sorting implementez
+algoritmul pentru sortarea matricilor in functie de suma elementelor.
+Folosind doua for uri , parcurg fiecare pereche de matrici din colectie pentru
+a le compara.Compar apoi suma elementelor , astfel daca suma elementelor pentru
+matricea 'i' este mai mare decar cea pentru matricea 'j' , atunci interschimb
+matricea 'i' cu matricea 'j' din colectie,apeland la functia swap_matrix.
+Apoi interschimb dimensiunile matricilor.
+Functia size este o functie care afiseaza dimensiunile unei matrici din
+colectie.In functia resize realizez redimensionarea efectiva a matricei.
+Aloc memorie pentru noua matrice redimensionata , iar apoi copiez elementele
+din vechea matrice la noile pozitii in functie de ordinea specificata pentru
+randuri si coloane.Eliberez memoria ocupata de vechea matrice si actualizez
+dimensiunile matricii.In functia free_mat parcurg randurile matricei si
+eliberez memoria alocata pentru fiecare dintre acestea .
+Eliberez apoi memoria pentru vectorul de randuri al matricie.
+Decrementez contorul de numarare pentru a reflecta faptul ca o matrice a fost
+eliminata din colectie.Functia release are rolul de a elibera toata memoria
+alocata pentru colectia de matrici si vectorii de dimensiuni.
+Parcurg toate matricile din colectie . Pentru fiecare matrice , parcurg
+randurile si eliberez memoria alocata pentru fiecare rand.
+Eliberez apoi memoria pentru vectorul de randuri al matricei.
+Eliberez apoi memoria pentru colectia de matrici si vectorii de dimensiuni.
+Actualizez contorul de matrici la 0 pentru a reflecta faptul ca toate matricile
+au fost eliminate din colectie.In functia main apelez fiecare dintre aceste
+functii pentru fiecare litera pe care o primesc.
